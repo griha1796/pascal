@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="icon.svg" type="image/svg">
+	<title>Pascal - your way</title>
+</head>
+<body>
+
+	<div class="pascal">PASCAL...</div>
+
+
+	<div class="block">
+		<p>program massiv;<br>
+
+var<br>
+a:array [1..100] of integer;
+n, i, j, p:integer;<br>
+
+begin<br>
+
+write('n=');<br>
+readln (n);<br>
+writeln('Исходный массив');<br>
+for i:=1 to n do<br>
+
+begin<br>
+
+
+a[i]:= random (10);<br>
+
+write (a[i],'');<br>
+end;<br>
+writeln();<br>
+writeln('Получившийся массив');<br>
+for i:=1 to n-1 do<br>
+for j:=i+1 to n do<br>
+if a[j]<a[i] then begin<br>
+
+p:=a[i];<br>
+a[i]:=a[j];<br>
+a[j]:=p;<br>
+end;<br>
+for i:=1 to n do<br>
+write (a[i],'');<br>
+end.</p>
+	</div>
+	
+
+
+
+
+
+	<script src="three.r119.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

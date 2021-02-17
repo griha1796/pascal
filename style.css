@@ -1,0 +1,38 @@
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+overflow-y: hidden;
+
+}
+
+.block{
+position: absolute;
+top: 50%;
+left: 50%;
+
+transform: translate3d(-50%, -50%, 0);
+background-color: #151e3c;
+padding: 50px;
+border-radius: 25px;
+border: 2px dashed #3fff60;
+
+}
+
+p{
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #ffffff;
+}
+
+::selection{
+  background-color: #9463DD;
+}
+
+.pascal{
+  font-size: 100px;
+  margin-left: 50px;
+  padding-top: 30px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
